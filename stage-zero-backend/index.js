@@ -9,17 +9,8 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 const catFactApi = 'https://catfact.ninja/fact';
-const profileInfo = {
-    name: 'Otega Otite', 
-    age: 28,
-    profession: 'Software Developer',
-    location: 'Nigeria',
-    skills: ['JavaScript', 'Python', 'React', 'HTML and CSS'],
-    hobbies: ['Reading', 'Running', 'Playing chess'],
-    email: 'otiteotega@gmail.com',
-    github: 'https://github.com/Tega96/HNG-Tasks'
-}
 
+// Default home page
 app.get('/', (req, res) => {
     res.send('Welcome to my profile API! Visit /me to see my profile info.')
 })
@@ -51,6 +42,7 @@ app.get('/me', async (req, res) => {
         });
     };
 });
+
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port: ${PORT}`)
