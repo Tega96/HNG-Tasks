@@ -1,0 +1,16 @@
+body {
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-card {
+    background-color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    max-width:300px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px;
+}
+
